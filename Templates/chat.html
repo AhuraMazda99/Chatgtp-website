@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Window</title>
+    <style>
+      /* Add CSS styling here */
+      #chat-messages {
+  height: 300px;
+  overflow-y: scroll;
+}
+#chat-messages p {
+  margin: 0;
+}
+#chat-form {
+  margin-top: 10px;
+}
+#chat-input {
+  width: 70%;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="chat-messages">
+      <!-- Display chat messages here -->
+    </div>
+    <form id="chat-form">
+      <input type="text" id="chat-input" name="message" placeholder="Type your message here">
+      <button type="submit">Send</button>
+    </form>
+    <script src="{{ url_for('static', filename='Chat.js') }}"></script>
+  </body>
+</html>
