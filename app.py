@@ -6,7 +6,7 @@ import requests
 app = Flask(__name__)
 
 # Load your OpenAI API key from an environment variable or secret management service
-openai.api_key = "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"
+openai.api_key = ""
 
 @app.route('/')
 def home():
